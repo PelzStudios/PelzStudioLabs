@@ -76,13 +76,13 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen relative z-10 pt-24 sm:pt-40">
+    <main className="min-h-screen relative z-10 pt-40">
       {/* Main Hero Section */}
-      <section className="px-6 sm:px-8 lg:px-12 mb-16 sm:mb-32">
+      <section className="px-4 sm:px-6 lg:px-8 mb-32">
         <div className="max-w-6xl mx-auto text-center">
           {/* Mission Statement */}
           <motion.h1
-            className="text-2xl sm:text-4xl md:text-6xl font-bold mb-6 sm:mb-8 leading-tight"
+            className="text-4xl md:text-6xl font-bold mb-8 leading-tight"
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -98,7 +98,7 @@ export default function Home() {
 
           {/* Subtitle */}
           <motion.p
-            className="text-base sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2"
+            className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", delay: 0.5 }}
@@ -122,7 +122,7 @@ export default function Home() {
                   gamesSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="px-6 sm:px-10 py-3 sm:py-5 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-bold text-sm sm:text-lg hover:scale-105 transition-transform duration-300 shadow-2xl relative overflow-hidden group"
+              className="px-10 py-5 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-2xl relative overflow-hidden group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -136,7 +136,7 @@ export default function Home() {
             {/* Learn More - Goes to About page */}
             <Link href="/about">
               <motion.button 
-                className="px-6 sm:px-10 py-3 sm:py-5 bg-black/40 text-gray-300 rounded-2xl font-bold text-sm sm:text-lg border-2 border-purple-500/30 hover:border-purple-500/60 hover:text-white transition-all duration-300 backdrop-blur-sm"
+                className="px-10 py-5 bg-black/40 text-gray-300 rounded-2xl font-bold text-lg border-2 border-purple-500/30 hover:border-purple-500/60 hover:text-white transition-all duration-300 backdrop-blur-sm"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -148,16 +148,16 @@ export default function Home() {
       </section>
 
       {/* Games Section */}
-      <section id="games" className="py-12 sm:py-20 px-6 sm:px-8 lg:px-12">
+      <section id="games" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-4xl font-bold text-center mb-10 sm:mb-16">
+        <h2 className="text-4xl font-bold text-center mb-16">
           <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
             Our Games
           </span>
         </h2>
 
         {/* Featured Game with Animated Character */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-12 sm:mb-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -180,7 +180,7 @@ export default function Home() {
                 <motion.img 
                   src="/echo-dash-character.png" 
                   alt="Eco Dash Game Character"
-                  className="w-48 h-48 sm:w-80 sm:h-80 object-contain"
+                  className="w-80 h-80 object-contain"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 />
@@ -244,7 +244,7 @@ export default function Home() {
             className="space-y-6"
           >
             <motion.h3 
-              className="text-2xl sm:text-3xl font-bold text-white"
+              className="text-3xl font-bold text-white"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -254,7 +254,7 @@ export default function Home() {
             </motion.h3>
             
             <motion.p
-              className="text-base sm:text-xl text-gray-300 leading-relaxed"
+              className="text-xl text-gray-300 leading-relaxed"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -339,7 +339,7 @@ export default function Home() {
     </section>
 
       {/* We Inspire Change Section */}
-      <section className="py-16 sm:py-24 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-black to-pink-900/10" />
         <motion.div
@@ -359,8 +359,8 @@ export default function Home() {
               className="space-y-8"
             >
               <div className="space-y-4">
-              <motion.h2 
-                  className="text-3xl sm:text-5xl md:text-6xl font-bold"
+                <motion.h2 
+                  className="text-5xl md:text-6xl font-bold"
                   initial={{ y: 30, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.2 }}
@@ -383,7 +383,7 @@ export default function Home() {
               </div>
 
               <motion.p
-                className="text-base sm:text-xl md:text-2xl text-gray-300 leading-relaxed"
+                className="text-xl md:text-2xl text-gray-300 leading-relaxed"
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6 }}
@@ -550,7 +550,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 sm:py-24 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
@@ -562,14 +562,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Section Header */}
           <motion.div
-            className="text-center mb-12 sm:mb-20"
+            className="text-center mb-20"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
             <motion.h2
-              className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6"
+              className="text-4xl md:text-5xl font-bold mb-6"
               initial={{ scale: 0.9 }}
               whileInView={{ scale: 1 }}
               transition={{ type: "spring", stiffness: 200 }}
@@ -581,7 +581,7 @@ export default function Home() {
               <span className="text-white"> Us</span>
             </motion.h2>
             <motion.p
-              className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto px-2"
+              className="text-xl text-gray-400 max-w-2xl mx-auto"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -592,7 +592,7 @@ export default function Home() {
           </motion.div>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -604,14 +604,14 @@ export default function Home() {
                 className="group relative"
               >
                 {/* Feature Card */}
-                <div className="relative p-5 sm:p-8 bg-black/40 backdrop-blur-sm rounded-3xl border-2 border-purple-500/10 hover:border-purple-500/30 transition-all duration-500 h-full">
+                <div className="relative p-8 bg-black/40 backdrop-blur-sm rounded-3xl border-2 border-purple-500/10 hover:border-purple-500/30 transition-all duration-500 h-full">
                   {/* Animated Icon */}
                   <motion.div
-                    className="w-14 h-14 sm:w-20 sm:h-20 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 border border-purple-500/30 group-hover:border-purple-500/50 transition-all duration-300"
+                    className="w-20 h-20 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center mb-6 border border-purple-500/30 group-hover:border-purple-500/50 transition-all duration-300"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                   >
                     <motion.span
-                      className="text-2xl sm:text-3xl"
+                      className="text-3xl"
                       animate={{ 
                         scale: [1, 1.2, 1],
                         rotate: [0, 5, -5, 0]
@@ -627,10 +627,10 @@ export default function Home() {
                   </motion.div>
 
                   {/* Content */}
-                  <h3 className="text-lg sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-500 group-hover:bg-clip-text transition-all duration-300">
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-500 group-hover:bg-clip-text transition-all duration-300">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed text-sm sm:text-lg">
+                  <p className="text-gray-400 leading-relaxed text-lg">
                     {feature.description}
                   </p>
 
@@ -657,7 +657,7 @@ export default function Home() {
 
           {/* Bottom CTA */}
           <motion.div
-            className="text-center mt-10 sm:mt-16"
+            className="text-center mt-16"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8 }}
@@ -665,7 +665,7 @@ export default function Home() {
           >
             <Link href="/contact">
               <motion.button
-                className="px-8 sm:px-12 py-3 sm:py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-bold text-sm sm:text-lg hover:scale-105 transition-transform duration-300 shadow-2xl"
+                className="px-12 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-2xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
